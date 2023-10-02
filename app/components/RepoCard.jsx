@@ -5,7 +5,6 @@ import { FaStar, FaCodeBranch, FaEye } from 'react-icons/fa';
 async function fetchRepo(name) {
   const res = await fetch(`https://api.github.com/repos/cookiejar2104/${name}`);
   const repo = await res.json();
-  // console.log(repo.html_url);
   return repo;
 }
 
